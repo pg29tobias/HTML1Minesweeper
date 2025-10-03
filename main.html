@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tobi's Minesweeper</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <img class="logo" src="bomb.png" alt="Logo" width="50" height="50" />
+        <section class="title">
+            <h1>Tobi's Minesweeper</h1>
+            <h2 class="subtitle">The Classic Game!</h2>
+        </section>
+        <img class="logo" src="bomb.png" alt="Logo" width="50" height="50" />
+    </header>
+    <main>
+        <section id="main-section">
+            <aside class="sidebar">
+                <nav class="sidebar-menu">
+                    <h2>Menu</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#rules-section">Rules.</a></li>
+                        <li><a href="#tricks-section">Tricks.</a></li>
+                        <li><a href="#history-section">History.</a></li>
+                        <li><a href="about.html">Credits.</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="playfield">
+                <h2>Play Now!</h2>
+                <script src="script.js"></script>
+                <img id="minesweeper" src="mine.png" alt="(MINESWEEPER BOARD HERE)" width="400" height="400" />
+            </section>
+        </section>
+        <section id="rules-section">
+            <h2 class="title">Rules</h2>
+            <p class="paragraph">Minesweeper is a logic-based puzzle game played on a grid of hidden squares. The objective is to uncover all the safe squares without 
+            detonating any hidden mines. At the start, players are presented with a covered board, and each square may either conceal a mine or be safe. By clicking on a square, the player reveals its contents: </p>
+            <p class="paragraph list">- If it contains a mine, the game ends immediately.</p>
+            <p class="paragraph list">- If it is safe, a number may appear. This number indicates how many mines are hidden in the eight surrounding squares.</p>
+            <p class="paragraph list">- If a square has no adjacent mines, it will appear blank and automatically reveal nearby safe squares.</p>
+            <p class="paragraph">Players use these numerical clues to logically deduce the locations of hidden mines. When a player believes a square contains a mine, they can flag it to mark it as dangerous. 
+            The game is won when all safe squares are uncovered and all mines are correctly flagged.</p>
+            <nav>
+                <a href="#main-section">Return.</a>
+            </nav>
+        </section>
+        <section id="tricks-section">
+            <h2 class="title">Tricks!</h2>
+            <p class="paragraph list">1. Learn Common Patterns</p>
+            <p class="paragraph">Minesweeper is full of recurring number arrangements that always mean the same thing. The most famous is the “1–2–1” line: along an edge, the two squares touching the “2” are always mines, 
+            while the ones next to the “1”s are safe. Another useful case is when two “1”s touch the same single covered square—this square must be a mine. Recognizing these small, repeated structures allows you to clear sections instantly, 
+            instead of calculating every possibility from scratch. Over time, your brain starts spotting them like words in a text.</p>
+            <p class="paragraph list">2. Use chording to save time and avoid errors.</p>
+            <p class="paragraph">Chording means clicking directly on a revealed number (usually with both mouse buttons, or a special shortcut) once you have placed the right number of flags around it. The game will then uncover all remaining adjacent squares automatically. 
+            This is powerful for two reasons: it removes the need for multiple clicks, and it ensures that if your flags are correct, you cannot trigger a mine by mistake. In fast play, chording becomes the rhythm of the game: 
+            flag → chord → scan for new moves. It is both faster and safer than opening squares one by one.</p>
+            <p class="paragraph list">3. Don’t guess too early.</p>
+            <p class="paragraph">A common mistake is to gamble as soon as you hit a 50/50 situation. Skilled players know that most of the time you can delay that guess. By shifting your attention to another part of the board, 
+            you often find a logical deduction that changes the overall constraints. Sometimes clearing just one extra square elsewhere turns a guessing situation into a guaranteed solution. In other words, patience is part of the strategy—Minesweeper rewards methodical thinking over luck.</p>
+            <p class="paragraph list">4. Use edges and corners to your advantage.</p>
+            <p class="paragraph">Squares on the edges of the grid are easier to analyze because they have fewer possible neighbors. This means the numbers around them are simpler to interpret, and solutions appear more quickly. 
+            Corners are especially useful for opening up safe areas early in the game. When you are stuck, scanning the borders often gives you new leads. By combining this with pattern recognition, you can open large safe zones and reduce the risk of blind guesses.</p>
+            <nav>
+                <a href="#main-section">Return.</a>
+            </nav>
+        </section>
+        <section id="history-section">
+            <h2 class="title">The History of Minesweeper</h2>
+            <p class="paragraph">Minesweeper–style logic games predate Windows by a decade. Early ancestors include Mined-Out (ZX Spectrum, 1983) by Ian Andrew, which already used hidden mines and numerical proximity clues on a grid, and became a modest hit across several 8-bit platforms. 
+            A closer predecessor was Relentless Logic (MS-DOS, 1985), a text-graphics minefield puzzle whose “numbers-guide-safe-movement” idea mirrors modern Minesweeper.</p>
+            <p class="paragraph">Microsoft Minesweeper itself was created by Curt Johnson (originally for IBM OS/2) and ported to Windows by Robert Donner; it first shipped in Microsoft Entertainment Pack 1 (1990) and was later bundled with Windows 3.1 (1992), 
+            replacing Reversi and quickly becoming a PC staple. Beyond entertainment, Microsoft also used it to help users practice precise left- and right-clicking with a mouse—a subtle usability tutorial disguised as a game.</p>
+            <p class="paragraph">The game evolved with Windows: classic WinMine persisted through Windows 7, then in Windows 8 Microsoft removed the built-in version and reissued Microsoft Minesweeper as a free, ad-supported Store app (later with subscription options), 
+            adding daily challenges and new themes; this shift drew mixed reactions.</p>
+            <nav>
+                <a href="#main-section">Return.</a>
+            </nav>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025 Tobias Arrieta. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
